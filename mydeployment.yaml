@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my_deployment
+  name: mydeployment
   labels:
     app: pinger
     purpose: demo
@@ -14,8 +14,8 @@ spec:
   template:
     metadata:
       labels:
-      app: pinger
-      purpose: demo
+        app: pinger
+        purpose: demo
     spec:
       containers:
       - name: pinger
