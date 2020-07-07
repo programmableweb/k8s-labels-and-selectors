@@ -9,10 +9,12 @@ spec:
   selector:
     matchLabels:
       app: pinger
+      purpose: demo
   template:
     metadata:
       labels:
         app: pinger
+        purpose: demo
     spec:
       containers:
       - name: pinger
