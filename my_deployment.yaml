@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my_deployment
+  labels:
+    app: pinger
+    purpose: demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pinger
+      purpose: demo
+  template:
+    metadata:
+      labels:
+      app: pinger
+      purpose: demo
+    spec:
+      containers:
+      - name: pinger
+        image: reselbob/pinger
+        ports:
+        - containerPort: 3000
