@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: pinger
-    type: demo
+    purpose: demo
   ports:
   -
     protocol: TCP
