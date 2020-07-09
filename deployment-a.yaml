@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-a
+  labels:
+    app: programmableweb
+    purpose: demo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: programmableweb
+      purpose: demo
+  template:
+    metadata:
+      labels:
+        app: programmableweb
+        purpose: demo
+    spec:
+      containers:
+      - name: simple-server-a
+        image: reselbob/simple-server-a:1.0
+        ports:
+        - containerPort: 3030
