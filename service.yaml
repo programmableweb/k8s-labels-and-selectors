@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: programmableweb
-    purpose: demo
+    purpose: testing
   ports:
   -
     protocol: TCP
