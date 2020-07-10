@@ -4,11 +4,11 @@ metadata:
   name: myservice
 spec:
   selector:
-    app: pinger
+    app: programmableweb
     purpose: demo
   ports:
   -
     protocol: TCP
-    port: 3000
-    targetPort: 3000
+    port: 3030
+    targetPort: 3030
   type: NodePort
