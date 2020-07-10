@@ -4,18 +4,18 @@ metadata:
   name: deployment-a
   labels:
     app: programmableweb
-    purpose: testing
+    purpose: dev
 spec:
   replicas: 3
   selector:
     matchLabels:
       app: programmableweb
-      purpose: testing
+      purpose: dev
   template:
     metadata:
       labels:
         app: programmableweb
-        purpose: testing
+        purpose: dev
     spec:
       containers:
       - name: simple-server-a
