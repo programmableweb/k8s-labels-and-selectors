@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: deployment-a
+  name: deployment-two
   labels:
     app: programmableweb
     purpose: dev
@@ -18,7 +18,7 @@ spec:
         purpose: dev
     spec:
       containers:
-      - name: simple-server-a
-        image: reselbob/simple-server-a:1.0
+      - name: simple-server-b
+        image: reselbob/simple-server-b:1.0
         ports:
         - containerPort: 3030
